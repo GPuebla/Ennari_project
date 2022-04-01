@@ -1,0 +1,45 @@
+body{
+    margin:0px;
+    background-color:#F6EFE8;
+    color:#B7CBBF ;
+    font-family: 'Bellefair', serif;
+}
+
+.header::after{
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(./img/social-media.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+    
+}
+
+.header:hover::after{
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.header:hover .header-content{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.header-content{
+    position:absolute;
+    z-index: 1;
+    top: 5%;
+    left: 20%;
+    margin-top:105px;
+    margin-left:-145px;
+    text-align: center;
+    transition: all 1000ms;
+    height: 650px;
+    width: 700px;
+}
+
