@@ -3,34 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ennari</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>Ennari</title>  
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <!-- GOOGLE FONT-->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+    
 
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/6bd1eb01f2.js" crossorigin="anonymous"></script>
 
     <!-- CSS CUSTOM -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
+
+    <!-- NAVEGA-->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">Navbar</a>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
     <!-- HEADER -->
     <header class="header">
         <div class="header-content">
             <img class="logo" src="./img/logo_Ennari.png" alt="logo">
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, temporibus, culpa ea tempore perspiciatis dolorum soluta ad deserunt accusantium natus ipsam illo expedita suscipit maxime ratione rerum! Laboriosam, quas non.
-            </p>
+            <!-- <p class="text">Lorem ipsum dolor  suscipit maxime ratione rerum! Laboriosam, quas non.
+            </p> -->
         </div>
     </header>
     
 
     <!-- SERVICES -->
-    <section class="services text-center">
+    <section class="services text-center bg-oscuro">
        <h3 class="title">Services</h3>
        <div class="container grid-3">
            <div>
@@ -68,7 +90,7 @@
     </section>
 
     <!-- ABOUT TWO -->
-    <section class="about bg-claro">
+    <section class="about bg-oscuro">
         <div class="container text-center" >
             <div class="grid-2">
                 <div>
@@ -84,7 +106,13 @@
 
     <!-- FOOTER -->
     <footer class="footer text-center bg-claro">
-        <p>Ennari &copy; - All rights reserved.</p>
+        <p>Ennari</p>      
     </footer>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="./logica.js"></script>
 </body>
 </html>
