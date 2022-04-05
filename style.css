@@ -1,21 +1,44 @@
 body{
     margin:0px;
     background-color:#F6EFE8;
-    color:#B7CBBF ;
+    color:rgb(182, 94, 128);
     font-family: 'Bellefair', serif;
 }
+
+#only_logo img{
+    width: 50px;
+    height: auto;
+}
+
+#only_logo{
+    display: flex;
+    border-radius:100%;
+    width: 100px;
+    height: 100px;
+    padding-left: 0.9%;
+    border: 2px solid rgb(182, 94, 128);
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    background-color: #F6EFE8 ;
+    position:fixed;
+    z-index: 2;
+    width: 100%;
+}
+
 
 .header::after{
     content: '';
     height: 100vh;
     width: 100%;
-    background-image: url(./img/social-media.jpg);
+    background-image: url(https://www.reliablesoft.net/wp-content/uploads/2019/08/digital-marketing-courses.webp);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center;
     background-size: cover;
     display: block;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
     transition: all 1000ms;
     
 }
@@ -25,21 +48,123 @@ body{
     -webkit-filter: blur(0px);
 }
 
+.header-content{
+    position:absolute;
+    z-index: 1; /*Posicion respecto de otros elementos*/
+    top: 17%;
+    left: 26%;
+    /* margin-top:105px;
+    margin-left:-145px; */
+    text-align: center;
+    transition: all 1000ms;
+    /* height: 650px;
+    width: 700px; */
+}
+
+
 .header:hover .header-content{
     filter: blur(2px);
     -webkit-filter: blur(2px);
 }
 
-.header-content{
-    position:absolute;
-    z-index: 1;
-    top: 5%;
-    left: 20%;
-    margin-top:105px;
-    margin-left:-145px;
-    text-align: center;
-    transition: all 1000ms;
-    height: 650px;
-    width: 700px;
+.header-content .logo{
+    height: 300px;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
 }
 
+.title{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+
+.text{
+    line-height: 1.7; /*Interlineado*/
+    margin-top: 1rem;
+}
+
+.container{
+    max-width: 960px;
+    margin: auto; /*ayuda a centrar el contenido*/
+    overflow: hidden; /*No deja que el texto se salga del contenedor en caso de ser mayor al ramaño*/
+    padding: 4rem 1rem;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.text-center{
+    text-align: center;
+    margin: auto;
+}
+
+.bg-claro{
+    background-color: #F6EFE8;
+    color: rgb(182, 94, 128)
+    
+}
+
+.bg-oscuro{
+    color: #F6EFE8;
+    background-color:rgb(182, 94, 128)
+}
+
+.services {
+    padding: 0.5rem 0;
+}
+
+footer{
+    padding: 1.3rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media(max-width: 560px){
+    .header::after{
+        height: 50vh;
+    }
+
+    .header-content{
+        top: 0.6%;
+    }
+
+    .header-content .logo{
+        height: 150px;
+        width: auto;
+        padding: 0px;
+        margin-top: 60px;
+    }
+
+    .grid-2, .grid-3{
+        grid-template-columns: 1fr;
+    }
+
+    .services{
+        padding: 1.4rem;
+    }
+
+    #only_logo img{
+        width: 20px;
+        height: auto;
+        
+    }
+
+    #only_logo{
+        width: 50px;
+        height: 50px;
+        padding-left: 15px;
+        padding-bottom: 5px;
+    }
+}
